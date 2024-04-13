@@ -100,10 +100,12 @@ export default function Cart() {
     // Find the product in the cart data and update its quantity
     const updatedCartData = cartData.products.map(product => {
       if (product._id === productId) {
+        if(newQuantity>=0){
         return {
           ...product,
           quantity: newQuantity
         };
+      }
       }
       return product;
     });
@@ -212,35 +214,7 @@ export default function Cart() {
       {/* Spinner End */}
       {/* Navbar start */}
       <div className="container-fluid fixed-top">
-        <div className="container topbar bg-primary d-none d-lg-block">
-          <div className="d-flex justify-content-between">
-            <div className="top-info ps-2">
-              <small className="me-3">
-                <i className="fas fa-map-marker-alt me-2 text-secondary" />{" "}
-                <a href="#" className="text-white">
-                  sampleaddress, India
-                </a>
-              </small>
-              <small className="me-3">
-                <i className="fas fa-envelope me-2 text-secondary" />
-                <a href="#" className="text-white">
-                  abc@gmail.com
-                </a>
-              </small>
-            </div>
-            <div className="top-link pe-2">
-              <a href="#" className="text-white">
-                <small className="text-white mx-2">Privacy Policy</small>/
-              </a>
-              <a href="#" className="text-white">
-                <small className="text-white mx-2">Terms of Use</small>/
-              </a>
-              <a href="#" className="text-white">
-                <small className="text-white ms-2">Sales and Refunds</small>
-              </a>
-            </div>
-          </div>
-        </div>
+
         <div className="container px-0">
           <nav className="navbar navbar-light bg-white navbar-expand-xl">
             <a href="/Home" className="navbar-brand">
@@ -269,7 +243,7 @@ export default function Cart() {
                 <a href="/cart" className="nav-item nav-link">
                   Cart
                 </a>
-                <a href="contact.html" className="nav-item nav-link">
+                <a href="/contact" className="nav-item nav-link">
                   Contact
                 </a>
               </div>
@@ -342,7 +316,7 @@ export default function Cart() {
         <h1 className="text-center text-white display-6">Cart</h1>
         <ol className="breadcrumb justify-content-center mb-0">
           <li className="breadcrumb-item">
-            <a href="#">Home</a>
+            <a href="/">Home</a>
           </li>
           <li className="breadcrumb-item">
             <a href="#">Pages</a>
@@ -395,7 +369,7 @@ export default function Cart() {
                           <div className="input-group quantity mt-4" style={{ width: 100 }}>
                             <button
                               className="btn btn-sm btn-minus rounded-circle bg-light border"
-                              onClick={() => handleQuantityChange(product._id, product.quantity - 1)}
+                              onClick={() => handleQuantityChange(product._id,product.quantity - 1)}
                             >
                               <i className="fa fa-minus" />
                             </button>
@@ -437,7 +411,7 @@ export default function Cart() {
             <div className="mt-5">
               <input
                 type="text"
-                className="border-0 border-bottom rounded me-5 py-3 mb-4"
+                className="border-0 border-bottom rounded me-5 py-3 mb-4 p-2"
                 placeholder="Coupon Code"
               />
               <button
@@ -647,24 +621,12 @@ export default function Cart() {
               <span className="text-light">
                 <a href="#">
                   <i className="fas fa-copyright text-light me-2" />
-                  Your Site Name
+                  FillBasket
                 </a>
                 , All right reserved.
               </span>
             </div>
-            <div className="col-md-6 my-auto text-center text-md-end text-white">
-              {/*/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. *** /*/}
-              {/*/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, *** /*/}
-              {/*/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". *** /*/}
-              Designed By{" "}
-              <a className="border-bottom" href="https://htmlcodex.com">
-                HTML Codex
-              </a>{" "}
-              Distributed By{" "}
-              <a className="border-bottom" href="https://themewagon.com">
-                ThemeWagon
-              </a>
-            </div>
+            
           </div>
         </div>
       </div>

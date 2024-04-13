@@ -41,35 +41,7 @@ export default function contact() {
       {/* Spinner End */}
       {/* Navbar start */}
       <div className="container-fluid fixed-top">
-        <div className="container topbar bg-primary d-none d-lg-block">
-          <div className="d-flex justify-content-between">
-            <div className="top-info ps-2">
-              <small className="me-3">
-                <i className="fas fa-map-marker-alt me-2 text-secondary" />{" "}
-                <a href="#" className="text-white">
-                  sampleaddress, India
-                </a>
-              </small>
-              <small className="me-3">
-                <i className="fas fa-envelope me-2 text-secondary" />
-                <a href="#" className="text-white">
-                  abc@gmail.com
-                </a>
-              </small>
-            </div>
-            <div className="top-link pe-2">
-              <a href="#" className="text-white">
-                <small className="text-white mx-2">Privacy Policy</small>/
-              </a>
-              <a href="#" className="text-white">
-                <small className="text-white mx-2">Terms of Use</small>/
-              </a>
-              <a href="#" className="text-white">
-                <small className="text-white ms-2">Sales and Refunds</small>
-              </a>
-            </div>
-          </div>
-        </div>
+        
         <div className="container px-0">
           <nav className="navbar navbar-light bg-white navbar-expand-xl">
             <a href="/Home" className="navbar-brand">
@@ -159,7 +131,7 @@ export default function contact() {
         <h1 className="text-center text-white display-6">Contact</h1>
         <ol className="breadcrumb justify-content-center mb-0">
           <li className="breadcrumb-item">
-            <a href="#">Home</a>
+            <a href="/">Home</a>
           </li>
           <li className="breadcrumb-item">
             <a href="#">Pages</a>
@@ -269,7 +241,7 @@ export default function contact() {
                 <div className="position-relative mx-auto">
                   <input
                     className="form-control border-0 w-100 py-3 px-4 rounded-pill"
-                    type="number"
+                    type="email"
                     placeholder="Your Email"
                   />
                   <button
@@ -396,24 +368,12 @@ export default function contact() {
               <span className="text-light">
                 <a href="#">
                   <i className="fas fa-copyright text-light me-2" />
-                  Your Site Name
+                  fillbasket
                 </a>
                 , All right reserved.
               </span>
             </div>
-            <div className="col-md-6 my-auto text-center text-md-end text-white">
-              {/*/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. *** /*/}
-              {/*/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, *** /*/}
-              {/*/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". *** /*/}
-              Designed By{" "}
-              <a className="border-bottom" href="https://htmlcodex.com">
-                HTML Codex
-              </a>{" "}
-              Distributed By{" "}
-              <a className="border-bottom" href="https://themewagon.com">
-                ThemeWagon
-              </a>
-            </div>
+          
           </div>
         </div>
       </div>

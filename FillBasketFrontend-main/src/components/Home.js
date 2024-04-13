@@ -132,19 +132,7 @@ export default class Home extends Component {
         {/* Spinner End */}
         {/* Navbar start */}
         <div className="container-fluid fixed-top">
-          <div className="container topbar bg-primary d-none d-lg-block">
-            <div className="d-flex justify-content-between">
-              <div className="top-info ps-2">
-                <small className="me-3"><i className="fas fa-map-marker-alt me-2 text-secondary" /> <a href className="text-white">smapleaddress, india</a></small>
-                <small className="me-3"><i className="fas fa-envelope me-2 text-secondary" /><a href className="text-white">abc@gmail.com</a></small>
-              </div>
-              <div className="top-link pe-2">
-                <a href className="text-white"><small className="text-white mx-2">Privacy Policy</small>/</a>
-                <a href className="text-white"><small className="text-white mx-2">Terms of Use</small>/</a>
-                <a href className="text-white"><small className="text-white ms-2">Sales and Refunds</small></a>
-              </div>
-            </div>
-          </div>
+          
           <div className="container px-0">
             <nav className="navbar navbar-light bg-white navbar-expand-xl">
               <a href="/Home" className="navbar-brand"><h1 className="text-primary display-6">Fill Basket</h1></a>
@@ -215,14 +203,14 @@ export default class Home extends Component {
                   <button type="submit" className="btn btn-primary border-2 border-secondary py-3 px-4 position-absolute rounded-pill text-white h-100" style={{ "top": "0", "right": "25%" }}>Search Now</button>
                 </div> */}
               </div>
-              <div className="col-md-12 col-lg-5">
+              <div className="col-md-12 col-lg-5 ">
                 <div id="carouselId" className="carousel slide position-relative" data-bs-ride="carousel">
                   <div className="carousel-inner" role="listbox">
                     <div className="carousel-item active rounded">
                       <img src="img/hero-img-1.png" className="img-fluid w-100 h-100 bg-secondary rounded" alt="First slide" />
-                      <a href className="btn px-4 py-2 text-white rounded">Groceries</a>
+                      {/* <a href className="btn px-4 py-2 text-white rounded">Groceries</a> */}
                     </div>
-                    <div className="carousel-item rounded">
+                     <div className="carousel-item rounded">
                       <img src="images/blog-3.jpg" className="img-fluid w-100 h-100 rounded" alt="Second slide" />
                       <a href className="btn px-4 py-2 text-white rounded">Clothes</a>
                     </div>
@@ -237,16 +225,16 @@ export default class Home extends Component {
                     <div className="carousel-item rounded">
                       <img src="images/returantfood.jpeg" className="img-fluid w-100 h-100 rounded" alt="Fivth slide" />
                       <a href className="btn px-4 py-2 text-white rounded">Restaurant</a>
-                    </div>
+                    </div> 
                   </div>
-                  <button className="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+                 {/*  <button className="carousel-control-prev" type="button" data-bs-target="carouselId" data-bs-slide="prev">
                     <span className="carousel-control-prev-icon" aria-hidden="true" />
                     <span className="visually-hidden">Previous</span>
                   </button>
-                  <button className="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+                  <button className="carousel-control-next" type="button" data-bs-target="carouselId" data-bs-slide="next">
                     <span className="carousel-control-next-icon" aria-hidden="true" />
                     <span className="visually-hidden">Next</span>
-                  </button>
+                  </button> */}
                 </div>
               </div>
             </div>
@@ -406,10 +394,10 @@ export default class Home extends Component {
               <div className="col-md-6 col-lg-4">
                 <a href>
                   <div className="service-item bg-dark rounded border border-dark">
-                    <img src="img/featur-2.jpg" className="img-fluid rounded-top w-100" alt="" />
+                    <img src="images/blog-3.jpg" className="img-fluid rounded-top w-100" alt="" />
                     <div className="px-4 rounded-bottom">
                       <div className="service-content bg-light text-center p-4 rounded">
-                        <h5 className="text-primary">Tasty Fruits</h5>
+                        <h5 className="text-primary">Clothes</h5>
                         <h3 className="mb-0">Free delivery</h3>
                       </div>
                     </div>
@@ -419,11 +407,38 @@ export default class Home extends Component {
               <div className="col-md-6 col-lg-4">
                 <a href>
                   <div className="service-item bg-primary rounded border border-primary">
-                    <img src="img/featur-3.jpg" className="img-fluid rounded-top w-100" alt="" />
+                    <img src="images/electronics-banner-1.jpg" className="img-fluid rounded-top w-100" alt="" />
                     <div className="px-4 rounded-bottom">
                       <div className="service-content bg-secondary text-center p-4 rounded">
-                        <h5 className="text-white">Exotic Vegitable</h5>
-                        <h3 className="mb-0">Discount ₹30</h3>
+                        <h5 className="text-white">Electronics</h5>
+                        <h3 className="mb-0">Discount ₹99</h3>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              
+              <div className="col-md-6 col-lg-4">
+                <a href>
+                  <div className="service-item bg-dark rounded border border-dark">
+                    <img src="images/bueatyproduct.jpeg" className="img-fluid rounded-top w-100" alt="" />
+                    <div className="px-4 rounded-bottom">
+                      <div className="service-content bg-light text-center p-4 rounded">
+                        <h5 className="text-primary">Beauty Products</h5>
+                        <h3 className="mb-0">Free delivery</h3>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div className="col-md-6 col-lg-4">
+                <a href>
+                  <div className="service-item bg-dark rounded border border-dark">
+                    <img src="images/returantfood.jpeg" className="img-fluid rounded-top w-100" alt="" />
+                    <div className="px-4 rounded-bottom">
+                      <div className="service-content bg-light text-center p-4 rounded">
+                        <h5 className="text-primary">Restaurant </h5>
+                        <h3 className="mb-0">Starter from 499</h3>
                       </div>
                     </div>
                   </div>
@@ -555,7 +570,7 @@ export default class Home extends Component {
                 </div>
                 <div className="col-lg-6">
                   <div className="position-relative mx-auto">
-                    <input className="form-control border-0 w-100 py-3 px-4 rounded-pill" type="number" placeholder="Your Email" />
+                    <input className="form-control border-0 w-100 py-3 px-4 rounded-pill" type="email" placeholder="Your Email" required />
                     <button type="submit" className="btn btn-primary border-0 border-secondary py-3 px-4 position-absolute rounded-pill text-white" style={{ "top": "0", "right": "0" }}>Subscribe Now</button>
                   </div>
                 </div>

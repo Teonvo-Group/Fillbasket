@@ -30,10 +30,11 @@ function App() {
 
           <Route path='/Home' element={<Home />} />
           <Route exact path='/' element={isLoggedIn === "true" ? <Home /> : <Signup />} />
-          <Route path='/Shop' element={
+          {/* <Route path='/Shop' element={
 
             <RequiredAdmin>
-              <Shop /></RequiredAdmin>} />
+              <Shop /></RequiredAdmin>} /> */}
+          <Route path='/Shop' element={<Shop />} />    
           <Route path='/Shopd' element={<Shopdetail />} />
           <Route path='/Signupp' element={<Signupp />} />
           <Route path='/cart' element={<Cart />} />

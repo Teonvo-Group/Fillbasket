@@ -398,7 +398,7 @@ export default class Home extends Component {
                     <div className="px-4 rounded-bottom">
                       <div className="service-content bg-light text-center p-4 rounded">
                         <h5 className="text-primary">Clothes</h5>
-                        <h3 className="mb-0">Free delivery</h3>
+                        <h3 className="mb-0">50-60% OFF</h3>
                       </div>
                     </div>
                   </div>

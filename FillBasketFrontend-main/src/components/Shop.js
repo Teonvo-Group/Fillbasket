@@ -946,7 +946,7 @@ export default function Shop() {
               <span className="text-light">
                 <a href="#">
                   <i className="fas fa-copyright text-light me-2" />
-                  Your Site Name
+                  FillBasket
                 </a>
                 , All right reserved.
               </span>

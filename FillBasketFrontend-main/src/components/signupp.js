@@ -224,7 +224,7 @@ export default class Signupp extends Component {
                   </div>
                   <div className="field button-field">
                     <button type='submit'>
-                      SingUp</button>
+                      SignUp</button>
                   </div>
                 </form>
                 <div className="form-link">

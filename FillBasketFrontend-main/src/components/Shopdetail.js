@@ -83,7 +83,7 @@ const Shopdetail = () => {
                             <div className="collapse navbar-collapse bg-white" id="navbarCollapse">
                                 <div className="navbar-nav mx-auto">
 
-                                    <a href="/Shopd" className="nav-item nav-link">
+                                    <a href="/Shop" className="nav-item nav-link">
                                         Shop
                                     </a>
                                     {RequiredAdmin ?

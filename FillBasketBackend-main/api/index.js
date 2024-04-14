@@ -3,7 +3,11 @@ const app = express();
 const mongoose = require("mongoose");
 app.use(express.json());
 const cors = require("cors");
-app.use(cors());
+app.use(cors({
+    origin : 'fillbasket-vdly.vercel.app',
+    methods : ["GET" ,  "POST"],
+    credentials : true
+}));
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const multer = require('multer');

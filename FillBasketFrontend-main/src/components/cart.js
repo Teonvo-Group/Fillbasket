@@ -230,7 +230,7 @@ export default function Cart() {
             </button>
             <div className="collapse navbar-collapse bg-white" id="navbarCollapse">
               <div className="navbar-nav mx-auto">
-                <a href="index.html" className="nav-item nav-link">
+                <a href="/" className="nav-item nav-link">
                   Home
                 </a>
                 <a href="/Shopd" className="nav-item nav-link">

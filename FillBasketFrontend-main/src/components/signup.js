@@ -14,7 +14,7 @@ export default class signup extends Component {
     const { email, password } = this.state;
     console.log(email, password);
     fetch(`${process.env.REACT_APP_BACKEND_URL}/login-user`, {
-      method: "POST",
+      method: "GET",
       crossDomain: true,
       headers: {
         "Content-Type": "application/json",

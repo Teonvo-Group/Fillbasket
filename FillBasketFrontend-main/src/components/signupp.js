@@ -18,7 +18,6 @@ export default class Signupp extends Component {
     console.log(fname, lname, email, password);
     fetch(`${process.env.REACT_APP_BACKEND_URL}/register`, {
       method: "POST",
-      mode: 'no-cors',
       crossDomain: true,
       headers: {
         "Content-Type": "application/json",
